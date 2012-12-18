@@ -1,0 +1,7 @@
+== Changelog ==
+
+= Theme Name: Blackbird Theme Pro=
+
+= Version: 1.0 =
+
+* * Blackbird Theme is created on 9/07/2012.

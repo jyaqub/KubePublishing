@@ -1,0 +1,235 @@
+/*
+ * CSS for woocommerce_dropdon_cart
+ * Copy this file to your theme folder before making changes
+ * eg wp-content/themes/YOUR_THEME/woocommerce-dropdown-cart/widget-flyout-cart-style.css
+ */
+
+	#dropdowncart {
+		position:relative;
+	}
+
+	.dropdowntriggerarea {
+		width:168px;
+		padding:3px 25px;
+		margin:2px 0;
+		color:#111;
+		text-decoration:none;
+		
+		display:block;
+		
+		border:1px solid #dddddd;
+		
+		box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		-webkit-box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		-moz-box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		
+		background:#fafafa;
+		background:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ffffff));
+		background:-webkit-linear-gradient(#fafafa, #ffffff);
+		background:-moz-linear-gradient(center top, #fafafa 0%, #ffffff 100%);
+		background:-moz-gradient(center top, #fafafa 0%, #ffffff 100%);
+		
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+	}
+	
+	.dropdowncarttrigger {
+		background: url('open.png') top left no-repeat;
+		width:20px;
+		height:20px;
+		display:block;
+		text-decoration:none;
+		position:absolute;
+		right:5px;
+		top:7px;
+	}
+	
+	.dropdowncarttrigger .open {
+		width:20px;
+		height:20px;		
+	}
+	
+	a.dropdowncarttrigger:visited,a.dropdowncarttrigger:hover {
+		color:#111;
+		text-decoration:none;	
+	}
+	
+	.dropdowncartcontents {
+		width:400px;
+		padding:20px;
+		margin-top:5px;
+
+		position:absolute;
+		right: 0;		
+		z-index:99999;
+		
+		border:1px solid #dddddd;
+		
+		box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		-webkit-box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		-moz-box-shadow:inset 0 0 0 3px rgba(0, 0, 0, 0.025);
+		
+		background:#fafafa;
+		background:-webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ffffff));
+		background:-webkit-linear-gradient(#fafafa, #ffffff);
+		background:-moz-linear-gradient(center top, #fafafa 0%, #ffffff 100%);
+		background:-moz-gradient(center top, #fafafa 0%, #ffffff 100%);
+		
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+	}
+
+	.dropdowncartcontents .cart_list li {
+		border-bottom:1px solid #dddddd;
+		padding:5px 0 !important;
+		color:#222;
+		font-size:11px;
+		position:relative;
+	}
+	
+	.dropdowncartcontents .dropdowncartimage {
+		float:left;
+		width:15%;
+	}
+	
+	.dropdowncartcontents .dropdowncartproduct {
+		float:left;
+		width:65%;		
+	}
+	
+	.dropdowncartcontents .dropdowncartquantity {
+		float:left;
+		width:20%;
+		text-align:right;
+	}
+	
+	.dropdowncartcontents span.quantity {
+		padding-right:5px;
+	}
+
+	.dropdowncartcontents .cart_list li a {
+		font-size:12px;
+		color:#222;
+	}
+
+	.dropdowncartcontents .cart_list li img {
+		float:left;
+		padding:2px;
+		background:#fff;
+		box-shadow:0 0 3px 0 #dddddd;
+		-webkit-box-shadow:0 0 3px 0 #dddddd;
+		-moz-box-shadow:0 0 3px 0 #dddddd;
+		margin-left:6px;
+	}
+
+	.dropdowncartcontents p.total {
+		padding:10px;
+		background:#003366;
+		color:#FFF;	
+		text-align:right;
+	}
+
+	.dropdowncartcontents p.buttons {
+		text-align:center;
+		margin-bottom:1em;	
+		text-align:center;
+		padding-left:10px;
+	}
+
+	.dropdowncartcontents .cart_list li.cart_oddrow {
+		background:#fff;
+	}
+
+	.dropdowncartcontents .cart_list li.cart_evenrow {
+		background:#f1f1f1;
+	}	
+	
+	.dropdowncartcontents .variation dt {
+		float:left;
+	}
+	
+	.dropdowncartcontents .variation dl {
+		float:left;
+	}
+
+	.dropdownbutton {
+		width:130px;
+		display: inline-block;
+		margin: 5px 5px 5px 0;
+		padding: 2px 13px 2px;
+		border: 1px solid #ccc;
+		color: #444;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		position: relative;
+		font-size:1em !important;
+		font-family: inherit;
+		overflow: visible;
+		text-shadow:0 1px 0 rgba(255,255,255,0.9);
+	
+		/*Border radius*/
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	
+		/*Background*/
+		background: #237fd7; /*Fallback*/
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#e5e5e5)); /* Saf4+, Chrome */
+		background-image: -webkit-linear-gradient(top, #fefefe, #e5e5e5); /* Chrome 10+, Saf5.1+, iOS 5+ */
+		background-image:    -moz-linear-gradient(top, #fefefe, #e5e5e5); /* FF3.6 */
+		background-image:     -ms-linear-gradient(top, #fefefe, #e5e5e5); /* IE10 */
+		background-image:      -o-linear-gradient(top, #fefefe, #e5e5e5); /* Opera 11.10+ */
+		background-image:         linear-gradient(top, #fefefe, #e5e5e5);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fefefe', EndColorStr='#e5e5e5'); /* IE6–IE9 */
+	
+		/*Box shadow*/
+		-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+							inset 0 0 0 1px rgba(255,255,255,0.6), 
+		    					  0 1px 2px hsla(0, 0%, 0%, .1) /*Shadow*/;
+		-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+						 inset 0 0 0 1px rgba(255,255,255,0.6), 
+							   0 1px 2px hsla(0, 0%, 0%, .1) /*Shadow*/;
+		box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+					inset 0 0 0 1px rgba(255,255,255,0.6), 
+						  0 1px 2px hsla(0, 0%, 0%, .1) /*Shadow*/;
+	
+		/* Animation */
+		-webkit-transition: all ease-in-out .2s;
+		-moz-transition: all ease-in-out .2s;
+	}
+
+	.dropdownbutton:hover {
+		text-decoration: none !important;
+		color:#222;
+		border-color:#9ebac3;
+		background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #fefefe),
+					color-stop(1, #f1f1f1)
+		);
+		background: -moz-linear-gradient(
+					center top,
+					#fefefe 20%,
+					#f1f1f1 100%
+		);
+	
+		/*Box shadow*/
+		-webkit-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+							inset 0 0 0 1px rgba(255,255,255,0.6), 
+							0 1px 6px #acd8e9 /*Shadow*/;
+		-moz-box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+						inset 0 0 0 1px rgba(255,255,255,0.6), 
+						0 1px 6px #acd8e9 /*Shadow*/;
+		box-shadow: inset 0 1px 0 hsla(0,100%,100%,.3) /*Top*/, 
+					inset 0 0 0 1px rgba(255,255,255,0.6), 
+					0 1px 6px #acd8e9 /*Shadow*/;
+	}
+	
+	.dropdownbutton:visited,.dropdownbutton:active {
+		color:#222;
+	}
